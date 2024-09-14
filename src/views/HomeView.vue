@@ -1,5 +1,6 @@
-<script setup lang="ts"></script>
-
+<script setup></script>
 <template>
-  <main><p class="uppercase">home</p></main>
+  <div class="card flex justify-center">
+    <Button label="Submit" />
+  </div>
 </template>
