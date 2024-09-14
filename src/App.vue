@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import SideBar from '@/Layout/SideBar.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header></header>
-
-  <RouterView />
+  <div class="flex">
+    <SideBar />
+    <main class="w-screen flex justify-center"><RouterView /></main>
+  </div>
 </template>
