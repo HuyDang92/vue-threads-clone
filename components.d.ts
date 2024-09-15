@@ -9,12 +9,11 @@ declare module 'vue' {
   export interface GlobalComponents {
     BtnThreads: typeof import('./src/components/ui/BtnThreads.vue')['default']
     Button: typeof import('primevue/button')['default']
-    IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
-    IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
-    IconEcosystem: typeof import('./src/components/icons/IconEcosystem.vue')['default']
-    IconSupport: typeof import('./src/components/icons/IconSupport.vue')['default']
-    IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
+    IconLogo: typeof import('./src/components/icons/IconLogo.vue')['default']
+    InputText: typeof import('primevue/inputtext')['default']
+    Password: typeof import('primevue/password')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SideBar: typeof import('primevue/sidebar')['default']
   }
 }

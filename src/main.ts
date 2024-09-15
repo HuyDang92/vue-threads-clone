@@ -5,6 +5,7 @@ import App from './App.vue'
 import Aura from '@primevue/themes/aura'
 import PrimeVue from 'primevue/config'
 import router from './router'
+import ContentContainer from './Layout/ContentContainer.vue'
 
 const app = createApp(App)
 
@@ -16,4 +17,5 @@ app.use(PrimeVue, {
   },
   unstyled: false
 })
+app.component('ContentContainer', ContentContainer)
 app.mount('#app')

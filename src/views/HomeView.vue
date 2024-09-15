@@ -1,12 +1,11 @@
-<script setup lang="ts">
-// import BtnThreads from "@/components/ui/BtnThreads.vue";
-</script>
 <template>
-  <div class="card flex justify-center">
-    <BtnThreads>Nút mặc định</BtnThreads>
-    <BtnThreads variant="outline">Nút Secondary</BtnThreads>
-    <BtnThreads size="lg" variant="outline">Nút lg</BtnThreads>
-    <BtnThreads variant="dark">Nút dark</BtnThreads>
-    <BtnThreads variant="light">Nút light</BtnThreads>
+  <div class="flex flex-col h-full">
+    <h1 class="text-center py-5 flex-shrink-0">Dành cho bạn</h1>
+    <ContentContainer>
+      <div class="pt-[60px]">
+        <div class="h-[1500px] bg-[#181818] rounded-3xl">home page</div>
+        <!-- Thêm các bài post ở đây -->
+      </div>
+    </ContentContainer>
   </div>
 </template>

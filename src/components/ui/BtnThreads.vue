@@ -9,6 +9,7 @@ interface Props {
   size?: ButtonSize;
   disabled?: boolean;
   type?: 'button' | 'submit' | 'reset';
+  full?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -16,6 +17,7 @@ const props = withDefaults(defineProps<Props>(), {
   size: 'default',
   disabled: false,
   type: 'button',
+  full: false
 });
 
 const emit = defineEmits<{
@@ -34,6 +36,7 @@ const classes = computed(() => {
       'h-8 px-3 text-xs': props.size === 'sm',
       'h-12 px-6 text-base': props.size === 'lg',
       'h-10 w-10': props.size === 'icon',
+      'w-full': props.full === true,
     },
     'relative overflow-hidden',
   ];
