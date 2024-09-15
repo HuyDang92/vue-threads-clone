@@ -3,8 +3,11 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="flex">
+  <!-- <div class="flex h-screen overflow-hidden">
     <SideBar />
-    <main class="w-screen flex justify-center"><RouterView /></main>
-  </div>
+    <main class="flex-grow overflow-y-auto overflow-x-hidden">
+      <RouterView />
+    </main>
+  </div> -->
+  <RouterView />
 </template>

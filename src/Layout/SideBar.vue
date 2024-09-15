@@ -11,7 +11,7 @@ const IconMidle = [
 const IconBottom = ['bi:pin', 'gravity-ui:bars-ascending-align-left']
 </script>
 <template>
-  <div class="w-[74px] flex flex-col justify-between items-center h-screen text-[#7E7E7E]">
+  <div class="w-[74px] fixed top-0 left-0 bottom-0 flex flex-col justify-between items-center text-[#7E7E7E] ">
     <IconLogo class="hover:scale-110 transition-all cursor-pointer w-14 h-14 p-3" />
 
     <div class="flex flex-col items-center gap-4">
