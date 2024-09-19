@@ -1,11 +1,26 @@
 <template>
-  <div class="flex flex-col h-full">
-    <h1 class="text-center py-5 flex-shrink-0">Dành cho bạn</h1>
-    <ContentContainer>
-      <div class="pt-[60px]">
-        <div class="h-[1500px] bg-[#181818] rounded-3xl">home page</div>
-        <!-- Thêm các bài post ở đây -->
+  <ContentContainer>
+    <template #header>
+      <h1>Home page</h1>
+    </template>
+    <template #main>
+      <div class="w-[600px] border rounded-xl pt-5 h-[calc(100vh-80px)] overflow-y-auto custom-scrollbar">
+        <div class="overflow-hidden">
+          <div class="w-full border-b h-80">content</div>
+          <div class="w-full border-b h-80">content</div>
+          <div class="w-full border-b h-80">content</div>
+          <div class="w-full border-b h-80">content</div>
+          <div class="w-full border-b h-80">content</div>
+          <div class="w-full border-b h-80">content</div>
+        </div>
       </div>
-    </ContentContainer>
-  </div>
+    </template>
+  </ContentContainer>
 </template>
+
+<style scoped>
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+</style>

@@ -1,7 +1,26 @@
 <template>
-    <div class="">
-      <h1 class="text-center my-5">Profile cuar bajn</h1>
-      <ContentContainer>profile page</ContentContainer>
-    </div>
-  </template>
-  
+  <ContentContainer>
+    <template #header>
+      <h1>Profile page</h1>
+    </template>
+    <template #main>
+      <div class="w-[600px] border rounded-xl pt-5 h-[calc(100vh-80px)] overflow-y-auto custom-scrollbar">
+        <div class="overflow-hidden">
+          <div class="w-full border-b h-80">content</div>
+          <div class="w-full border-b h-80">content</div>
+          <div class="w-full border-b h-80">content</div>
+          <div class="w-full border-b h-80">content</div>
+          <div class="w-full border-b h-80">content</div>
+          <div class="w-full border-b h-80">content</div>
+        </div>
+      </div>
+    </template>
+  </ContentContainer>
+</template>
+
+<style scoped>
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+</style>

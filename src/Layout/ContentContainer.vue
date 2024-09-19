@@ -1,22 +1,13 @@
 <template>
-    <div class="w-[600px] mx-auto h-[calc(100vh-60px)] overflow-hidden">
-        <div class="h-full overflow-y-scroll overflow-x-hidden pr-[17px] box-content scrollbar-hide">
-            <slot></slot>
+    <div class="overflow-x-hidden min-h-screen relative">
+      <div class="sticky top-0 w-full z-[97]">
+        <div class="w-[680px] mx-auto h-20 flex justify-center items-center">
+          <slot name="header"></slot>
         </div>
+      </div>
+      <div class="flex justify-center">
+        <slot name="main"></slot>
+      </div>
     </div>
-</template>
-
-<style scoped>
-/* Custom scrollbar hiding for Firefox */
-.scrollbar-hide {
-    scrollbar-width: none;
-}
-/* Custom scrollbar hiding for IE and Edge */
-.scrollbar-hide {
-    -ms-overflow-style: none;
-}
-/* Custom scrollbar hiding for WebKit browsers */
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
-}
-</style>
+  </template>
+  
