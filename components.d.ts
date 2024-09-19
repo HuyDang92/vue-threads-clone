@@ -8,10 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     BtnThreads: typeof import('./src/components/ui/BtnThreads.vue')['default']
-    Button: typeof import('primevue/button')['default']
     IconLogo: typeof import('./src/components/icons/IconLogo.vue')['default']
-    InputText: typeof import('primevue/inputtext')['default']
-    Password: typeof import('primevue/password')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SideBar: typeof import('primevue/sidebar')['default']
